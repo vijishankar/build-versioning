@@ -16,7 +16,7 @@ stages:
 
 - stage:
   displayName: Build_Branch_Version_Number
-  condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+  condition: ne(variables['Build.SourceBranch'], 'refs/heads/master')
   jobs:
   - job: Build_Branch_Version_Number
     variables:
